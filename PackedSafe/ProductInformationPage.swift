@@ -12,12 +12,14 @@ import UIKit
 class ProductInformaitonPage: UIViewController {
 	
 	//Product Information variables
-
+    var newProduct : Product?
 	
+    //IB object variables from ProductInformationPage UIViewController
 	@IBOutlet weak var NavigationBar: UINavigationBar!
 	@IBAction func BackButton(_ sender: AnyObject) {
 		
 	}
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -29,5 +31,5 @@ class ProductInformaitonPage: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	
+    
 }

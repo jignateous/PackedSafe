@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0F-lX-tky">
-                                <frame key="frameInset" minY="20" height="44"/>
+                                <frame key="frameInset" minY="20" height="44" maxX="-0.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.72118046859999996" blue="0.27421803820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="1" green="0.72118046859999996" blue="0.27421803820000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,7 +101,7 @@
                                             <outlet property="CompanyName" destination="tGW-Dg-Ot5" id="DW7-oM-Zol"/>
                                             <outlet property="ProductImage" destination="3fO-Ep-lTC" id="ddX-Ar-YLd"/>
                                             <outlet property="ProductName" destination="LWR-ku-570" id="j3i-Kf-wly"/>
-                                            <segue destination="rIW-PA-ioO" kind="show" id="maN-tI-RXy">
+                                            <segue destination="rIW-PA-ioO" kind="show" identifier="productPageSegue" id="maN-tI-RXy">
                                                 <segue key="commit" inheritsFrom="parent" id="Zjr-ki-gbQ"/>
                                                 <segue key="preview" inheritsFrom="commit" id="FmN-5i-S5j"/>
                                             </segue>
@@ -187,7 +187,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeButton:" destination="2Ww-Om-hOC" eventType="touchUpInside" id="Nlr-ua-HRG"/>
-                                    <segue destination="xc6-I2-2fm" kind="show" id="IiC-Nb-Ufx"/>
+                                    <segue destination="xc6-I2-2fm" kind="show" identifier="listViewSegue" id="IiC-Nb-Ufx"/>
                                 </connections>
                             </button>
                         </subviews>

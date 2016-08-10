@@ -14,6 +14,8 @@ class ProductTableViewCell: UITableViewCell {
 	@IBOutlet weak var ProductImage: UIImageView!
 	@IBOutlet weak var ProductName: UILabel!
 	@IBOutlet weak var CompanyName: UILabel!
+    var uniqueProductURL : String = ""
+    
 	
 	func setProductImage(imageData:UIImage) {
 		ProductImage.image = imageData

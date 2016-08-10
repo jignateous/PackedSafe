@@ -19,6 +19,7 @@
 		47DD5AC71D417BD40056ABB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47DD5AC51D417BD40056ABB7 /* LaunchScreen.storyboard */; };
 		47DD5AD21D417BD40056ABB7 /* PackedSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD5AD11D417BD40056ABB7 /* PackedSafeTests.swift */; };
 		47DD5ADD1D417BD40056ABB7 /* PackedSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD5ADC1D417BD40056ABB7 /* PackedSafeUITests.swift */; };
+		FDDC4DE91D5B7A2900AD5831 /* DatabaseConnectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDC4DE81D5B7A2900AD5831 /* DatabaseConnectionClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		47DD5AD81D417BD40056ABB7 /* PackedSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackedSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47DD5ADC1D417BD40056ABB7 /* PackedSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackedSafeUITests.swift; sourceTree = "<group>"; };
 		47DD5ADE1D417BD40056ABB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDC4DE81D5B7A2900AD5831 /* DatabaseConnectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConnectionClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		47DD5ABB1D417BD40056ABB7 /* PackedSafe */ = {
 			isa = PBXGroup;
 			children = (
+				FDDC4DE81D5B7A2900AD5831 /* DatabaseConnectionClass.swift */,
 				47DD5ABC1D417BD40056ABB7 /* AppDelegate.swift */,
 				47DD5AC01D417BD40056ABB7 /* Main.storyboard */,
 				470E4A511D45D0BD00EFE226 /* SettingsViewController.swift */,
@@ -284,6 +287,7 @@
 				478FDE5A1D41B77F00131ADF /* QRScannerViewController.swift in Sources */,
 				4763FCB41D419D9500FCDDA3 /* ProductInformationPage.swift in Sources */,
 				470E4A521D45D0BD00EFE226 /* SettingsViewController.swift in Sources */,
+				FDDC4DE91D5B7A2900AD5831 /* DatabaseConnectionClass.swift in Sources */,
 				4763FCB01D417F6800FCDDA3 /* ListViewController.swift in Sources */,
 				4763FCB21D41852200FCDDA3 /* ProductTableViewCell.swift in Sources */,
 				478FDE5C1D42AC3B00131ADF /* ProductInformation.swift in Sources */,

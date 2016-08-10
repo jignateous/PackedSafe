@@ -15,6 +15,7 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 	var objCaptureSession:AVCaptureSession?
 	var objCaptureVideoPreviewLayer:AVCaptureVideoPreviewLayer?
 	var vwQRCode:UIView?
+    var product = Product(uniqueURL: "")
 
 	@IBOutlet weak var lblQRCodeResult: UILabel!
     @IBAction func closeButton(_ sender: AnyObject) {
@@ -90,9 +91,31 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 			vwQRCode?.frame = objBarCode.bounds;
 			if objMetadataMachineReadableCodeObject.stringValue != nil {
 				lblQRCodeResult.text = objMetadataMachineReadableCodeObject.stringValue
+                getUniqueProductInformation(qrString: objMetadataMachineReadableCodeObject.stringValue)
 			}
 		}
 	}
+    
+    func getUniqueProductInformation(qrString: String){
+        //test if my linkedIn url shows successfully then change lbl to Success
+        if qrString == "https://www.linkedin.com/in/jgonzalesneal"{
+            lblQRCodeResult.text = "Success!"
+            
+            sendProductInformation(qrURL: qrString)
+        }
+        
+        //Check database for uniqueURL and if it matches a Product
+        //Possible database function
+            //Get all product or just uniqueURL?
+        
+        //TODO: Create Database function
+        
+        //If matched, then make Segue to ListViewController
+        
+        
+        //If no match, then continue scanning
+        return
+    }
 	
 	override func viewDidLoad()
 	{
@@ -113,5 +136,19 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 		self.addVideoPreviewLayer()
 		self.initializeQRView()
 	}
-	
+    
+
+    //Make Segue attempt to ListViewController passing along unique url by Product
+    func sendProductInformation(qrURL : String){
+        
+        //Create new Product from uniqueURL
+        let product = Product(uniqueURL: qrURL)
+        
+        //send a new Product
+        let destinationVC = ListViewController()
+        destinationVC.listOfProducts.append(product)
+        
+        //Perform segue to ListViewController
+        destinationVC.performSegue(withIdentifier: "listViewSegue", sender: nil)
+    }
 }

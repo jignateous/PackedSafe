@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31BFF4883A7224487D9DC0C3A3D8758BAC364B09",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31BFF4883A7224487D9DC0C3A3D8758BAC364B09" : 9223372036854775807,
+    "8F138A9FA0CF89CF4D0FAF43195958FC6F2CE21D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "35DE98E3-C4C8-4B37-A837-B5C61DE520E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31BFF4883A7224487D9DC0C3A3D8758BAC364B09" : "PackedSafe\/",
+    "8F138A9FA0CF89CF4D0FAF43195958FC6F2CE21D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PackedSafe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PackedSafe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jignateous\/PackedSafe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31BFF4883A7224487D9DC0C3A3D8758BAC364B09"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:https:\/\/github.com\/jignateous\/PackedSafe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F138A9FA0CF89CF4D0FAF43195958FC6F2CE21D"
+    }
+  ]
+}

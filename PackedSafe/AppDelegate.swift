@@ -8,9 +8,20 @@
 
 import UIKit
 
+struct Product {
+    var ProductImage : UIImage?
+    var ProductName : String?
+    var CompanyName : String?
+    let uniqueURL : String
+    
+    init(uniqueURL: String){
+        self.uniqueURL = uniqueURL
+    }
+    
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
 	var window: UIWindow?
 
 
