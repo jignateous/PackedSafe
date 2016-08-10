@@ -18,7 +18,7 @@ extension UIColor {
     }
 }
 
-class ListViewController: UIViewController, UITableViewDelegate{
+class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 	
 	
 	
@@ -48,5 +48,16 @@ class ListViewController: UIViewController, UITableViewDelegate{
         cell.ProductImage.image = #imageLiteral(resourceName: "Image")
         
         
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //Set the cellForRowAt and return object UITAbleViewCell
+        guard let cell = tableView.cellForRow(at: indexPath) as? ProductTableViewCell else {return UITableViewCell.init()}
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Set the number of Rows in the section and return int
+        return section
     }
 }

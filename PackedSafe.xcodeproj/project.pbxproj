@@ -211,6 +211,11 @@
 						DevelopmentTeam = H6S78BK4CL;
 						DevelopmentTeamName = "Josua Gonzales-Neal";
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					47DD5ACC1D417BD40056ABB7 = {
 						CreatedOnToolsVersion = 7.3.1;
